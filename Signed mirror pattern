@@ -16,6 +16,7 @@ if(n>0)
             else
             printf("* ");
         }
+        printf("\n");
     }
 }
 else{
