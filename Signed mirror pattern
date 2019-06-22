@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int n,i,j,c=1;
+scanf("%d",&n);
+if(n>0)
+{
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(j<=i)    
+            printf("%d ",c++);
+            else
+            printf("* ");
+        }
+    }
+}
+else{
+    n=abs(n);
+    int t=1;
+    c=t;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(j<=n-(i+2))
+            printf("* ");
+            else
+            printf("%d ",c--);
+        }
+    t+=i+2;
+    c=t;
+        printf("\n");
+    }
+}
+
+}
