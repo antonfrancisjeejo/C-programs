@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,j,k,l,m,n,o,p,s=0;
+    scanf("%d %d %d\n%d %d",&o,&j,&k,&l,&m);
+    if(l>m)
+    {
+        for(i=j;i>0&&o>0;i--)
+        {
+            s=s+l;
+            o=o-2;
+        }
+        for(i=k;i>0&&o>1;i=i-1)
+        {
+            s=s+m;
+            o=o-2;
+        }
+    }
+    else
+    {
+        for(i=k;i>0&&o>0;i=i-1)
+        {
+            s=s+m;
+            o=o-2;
+        }
+        for(i=j;i>0&&o>1;i=i-1)
+        {
+            s=s+l;
+            o=o-2;
+        }
+    }
+    printf("%d",s);
+    
+
+}
